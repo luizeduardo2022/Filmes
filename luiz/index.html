@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <style>
+        body {
+
+            height: 100vh;
+        }
+
+        nav {
+            background-color: rgb(0, 0, 0);
+        }
+
+        footer {
+            display: flex;
+            background-color: black;
+        }
+
+        li {
+            align-items: center;
+            justify-content: center;
+        }
+
+        #cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        .card img {
+            height: 450px;
+            width: 285px;
+        }
+        h1{
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="img/logo.png" alt="" width="90px">
+            </a>
+            <li class="nav-item"><a href="index.html" class="nav-link">FILMES</a></li>
+            <li class="nav-item"><a href="serie.html" class="nav-link">SÉRIES</a></li>
+            </label>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Configurações</a>   
+                <div class="dropdown-content">
+                    <label class="labi" for="">modo escuro</label>
+                    <input onclick="clicar()" type="radio" class="chox" id="chk" name="bota">
+                    <label class="labi" for="">modo claro</label>
+                    <input onclick="clicou()" type="radio" class="chox" id="ctk" name="bota">
+                    <h3>Add card:</h3>
+                    <form id="add-card-form">
+                        <label class="labi" for="title">Título:</label><br>
+                        <input type="text" id="title" name="title" required><br>
+                        <label class="labi" for="image-url">Imagem:</label><br>
+                        <input type="file" id="image-file" name="image-file" accept="image/*"><br>
+                        <label class="labi" for="content">Conteúdo:</label><br>
+                        <textarea id="content" name="content" required></textarea><br><br>
+                        <button class="btn btn-warning" type="submit">Adicionar Card</button>
+                    </form>
+                </div>
+            </li>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="mt-5 mb-4">Filmes</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="img" src="https://m.media-amazon.com/images/I/81fk-N7tvbL._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">JOHN WICK 4</h5>
+                        <p class="card-text">DISPONÍVEL NA MAX</p>
+                        <a href="https://www.youtube.com/watch?v=RtFFXs3nN40" class="btn btn-warning"
+                            target="_blank">TRAILER </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;" id="meuCard">
+                    <img class="img" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/43/36/20096333.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BASTARDOS INGLORIOS</h5>
+                        <p class="card-text">DISPONÍVEL NO PRIME VIDEO</p>
+                        <a href="https://www.youtube.com/watch?v=FDNNHh7TRN0" class="btn btn-warning"
+                            target="_blank">TRAILER </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="img" src="https://upload.wikimedia.org/wikipedia/pt/7/7d/Rango_p%C3%B4ster.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">RANGO</h5>
+                        <p class="card-text">DISPONÍVEL NA MAX</p>
+                        <a href="https://www.youtube.com/watch?v=4s4UCxCv_OE" class="btn btn-warning"
+                            target="_blank">TRAILER </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="img" src="img/KID.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">THE BATMAN</h5>
+                        <p class="card-text">DISPONÍVEL NA MAX</p>
+                        <a href="https://www.youtube.com/watch?v=fbS0efVvkVU " class="btn btn-warning"
+                            target="_blank">TRAILER </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="img" src="https://br.web.img2.acsta.net/medias/nmedia/18/90/07/53/20391069.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DJANGO</h5>
+                        <p class="card-text">DISPONÍVEL NO PRIME VIDEO</p>
+                        <a href="https://www.youtube.com/watch?v=-Hk-LYcavrw" class="btn btn-warning"
+                            target="_blank">TRAILER </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="img" src="https://media.fstatic.com/vqF5j4g_RCIqmwSzhONOTVidMNM=/322x478/smart/filters:format(webp)/media/movies/covers/2015/07/hitman-assassino-47_t540_MaKZIaN.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AGENTE 47</h5>
+                        <p class="card-text">DISPONÍVEL NO PRIME VIDEO</p>
+                        <a href="https://www.youtube.com/watch?v=LwvkjZCMAwQ" class="btn btn-warning"
+                            target="_blank">TRAILER </a>
+                    </div>
+                </div>
+            </div>
+            <div id="cards-container">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>METFLIX-2024-ATUALIZADO</p>
+    </footer>
+
+
+    <script src="js/timao.js"></script>
+    <script src="js/card.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</html>

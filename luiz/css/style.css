@@ -1,0 +1,145 @@
+h4{
+    color: white;
+  }
+  .card{
+    text-align: center;
+  
+    transition:  0.5s;
+  }
+  .card:hover{
+   transform: scale(1.05);
+  }
+  .img{
+    height: 450px;
+    width: 285px;
+  }
+  .ipt {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid;
+      border-radius: 30px;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      display: block;
+  
+  }
+  
+  .lab {
+      font-size: 25px;
+  }
+  footer {
+    display: flex;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      bottom: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+  .continer {
+      font-size: large;
+      font-family: Arial, Helvetica, sans-serif;
+      border-radius: 30px;
+      color: aliceblue;
+      background-color: rgb(2, 2, 92);
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  
+  
+  }
+  
+  #but {
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(102, 173, 255);
+      border: none;
+      border-radius: 10px;
+      color: aliceblue;
+      padding: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      transition: padding 0.2s;
+  }
+  
+  #but:hover {
+      background-color: rgb(0, 123, 255);
+      padding: 12px;
+  
+  }
+  
+  #aviso {
+      color: red;
+  }
+  
+  /*BOL.HTML------------------------------------------------------------------------------------------------------------ */
+  /*BOL.HTML------------------------------------------------------------------------------------------------------------ */
+  #cont {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+  
+  
+  }
+  
+  #conta {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 40px;
+  
+  }
+  .chox{
+      display: flex;
+      margin-top: -15px;
+      margin-left: 120px;
+     justify-content: end;
+     align-items: end;
+  }
+  .labi{
+      display: flex;
+      color: white;
+  }
+  
+  /*-------------------------CONFIGURAÇÕES----------------------------------------------------*/
+  li a, .dropbtn {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover, .dropdown:hover .dropbtn {
+      background-color: #111;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #111;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
